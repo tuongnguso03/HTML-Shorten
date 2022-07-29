@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
+  <script type="text/javascript">
+    function submitForm() {
+        var formElement = document.getElementById('myForm');
+        var data = new FormData(formElement);
+        fetch('/redirect', {
+              method: 'POST',
+              body: data,
+            })
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById("responseArea").innerHTML = data;
+            })
+            .catch(error => {
+              console.error(error);
+            });
+    }
+ </script>
 <body>
 
 <h2>Redirect home</h2>
-<form method="post">
+<form method="post" id="myForm">
   <input type="text" name="shortlink" id="shortlink" value=""/><br>
   <input type="text" name="longlink" id="longlink" value=""/><br>
-  <input type="submit">
+  <input type="button" value="Start" onclick="submitForm()">
 </form>
 
-<p id="demo">{{result}}</p>
-
+<p id="responseArea"></p>
+<p>
+  {% for link in links %}
+    <b>{{link[0]}}            </b>
+    <b>{{link[1]}}            </b><br>
+  {% endfor %}
+</p>
 
 </body>
 </html>
