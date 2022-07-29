@@ -47,6 +47,7 @@ session_start();
 
 
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head>
 	<title>Login</title>
@@ -96,5 +97,20 @@ session_start();
 			<a href="signup.php">Click to Signup</a><br><br>
 		</form>
 	</div>
+=======
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Interface/style.css">
+</head>
+<body>
+<form class="box" action="index.html" method="post">
+  <h1>Login</h1>
+  <input type="text" name="" placeholder="Username">
+  <input type="password" name="" placeholder="Password">
+  <input type="submit" name="" value="Login">
+</form>
+>>>>>>> 4e5456f (login main file)
 </body>
 </html>
