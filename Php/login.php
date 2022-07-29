@@ -48,6 +48,7 @@ session_start();
 
 <!DOCTYPE html>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html>
 <head>
 	<title>Login</title>
@@ -98,6 +99,8 @@ session_start();
 		</form>
 	</div>
 =======
+=======
+>>>>>>> 4e5456fe1af71c9f75a3449bfd4b79d6f9c5a860
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
@@ -111,6 +114,9 @@ session_start();
   <input type="password" name="" placeholder="Password">
   <input type="submit" name="" value="Login">
 </form>
+<<<<<<< HEAD
 >>>>>>> 4e5456f (login main file)
+=======
+>>>>>>> 4e5456fe1af71c9f75a3449bfd4b79d6f9c5a860
 </body>
 </html>
